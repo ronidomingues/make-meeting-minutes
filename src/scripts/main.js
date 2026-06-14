@@ -1,0 +1,50 @@
+import { makeTitle, makeHeader, makeNav, makeAside, makeMain, makeArticle, makeSection, makeFooter } from './components/basePage.js';
+import { useState } from './utils/useStage.js';
+
+const [title, setTitle] = useState('My Meeting Minutes');
+
+const header = makeHeader();
+const nav = makeNav();
+const aside = makeAside();
+const main = makeMain();
+const article = makeArticle();
+const section = makeSection();
+const footer = makeFooter();
+
+makeTitle(title());
+
+header.textContent = 'HEADER';
+header.style.textAlign = 'center';
+header.style.fontSize = '2em';
+header.style.fontWeight = 'bold';
+header.style.alignContent = 'center';
+nav.textContent = 'NAV';
+nav.style.fontSize = '1.5em';
+nav.style.fontWeight = 'bold';
+nav.style.alignContent = 'center';
+nav.style.textAlign = 'center';
+aside.textContent = 'ASIDE';
+aside.style.fontSize = '1.5em';
+aside.style.fontWeight = 'bold';
+aside.style.alignContent = 'center';
+aside.style.textAlign = 'center';
+main.textContent = 'MAIN';
+main.style.fontSize = '1.5em';
+main.style.fontWeight = 'bold';
+main.style.alignContent = 'center';
+main.style.textAlign = 'center';
+article.textContent = 'ARTICLE';
+article.style.fontSize = '1.5em';
+article.style.fontWeight = 'bold';
+article.style.alignContent = 'center';
+article.style.textAlign = 'center';
+section.textContent = 'SECTION';
+section.style.fontSize = '1.5em';
+section.style.fontWeight = 'bold';
+section.style.alignContent = 'center';
+section.style.textAlign = 'center';
+footer.textContent = 'FOOTER';
+footer.style.fontSize = '1.5em';
+footer.style.fontWeight = 'bold';
+footer.style.alignContent = 'center';
+footer.style.textAlign = 'center';

@@ -1,0 +1,59 @@
+@import url('./variables.css');
+@import url('./reset.css');
+
+header{
+    background-color: var(--header-bg);
+    width: var(--header-width);
+    height: var(--header-height);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+nav{
+    background-color: var(--nav-bg);
+    position: fixed;
+    top: var(--header-height);
+    right: 0;
+    z-index: 1;
+    width: var(--nav-width);
+    height: var(--nav-height);
+}
+aside{
+    background-color: var(--aside-bg);
+    position: fixed;
+    top: calc(var(--header-height) + var(--nav-height));
+    left: 0;
+    z-index: 1;
+    width: var(--asside-width);
+    height: var(--asside-height);
+}
+main{
+    position: fixed;
+    top: calc(var(--header-height) + var(--nav-height));
+    left: var(--asside-width);
+    width: calc(100% - var(--asside-width));
+    height: var(--main-height);
+    background-color: var(--main-bg);
+}
+article{
+    width: var(--article-width);
+    height: var(--article-height);
+    background-color: var(--article-bg);
+}
+section{
+    width: var(--section-width);
+    height: var(--section-height);
+    background-color: var(--section-bg);
+    position: fixed;
+    top: calc(var(--header-height) + var(--nav-height));
+}
+footer{
+    background-color: var(--footer-bg);
+    width: var(--footer-width);
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    z-index: 1;
+    height: var(--footer-height);
+}
