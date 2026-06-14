@@ -1,5 +1,13 @@
-export function makeTitle(titleText) {
-    document.title = titleText;
+import { useState } from '../utils/useStage.js';
+
+const [title, setTitle] = useState('My Meeting Minutes');
+
+export function makeTitle() {
+    document.title = title();
+}
+export function changeTitle(newTitle) {
+    setTitle(newTitle);
+    makeTitle();
 }
 export function makeHeader() {
     const header = document.createElement('header');
